@@ -33,6 +33,6 @@ app.use('/', homeRoutes);
 app.use('/', authRoutes);
 
 // Database connection and server start
-mongoose.connect('mongodb://localhost:27017/auth-system', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://hckmigo:gQ0PY6F5fRU7tovQ@authdata.fvk6wr7.mongodb.net/?retryWrites=true&w=majority&appName=AuthData', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => app.listen(3000, () => console.log('Server running on port 3000')))
     .catch(err => console.log(err));

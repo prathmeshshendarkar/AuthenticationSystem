@@ -1,0 +1,13 @@
+<%- include('layout', { body: `
+    <h1>Sign Up</h1>
+    <form action="/signup" method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+    <div class="form-links">
+        <a href="/signin">Already have an account? Sign In</a>
+        <a href="/auth/google">Sign Up with Google</a>
+    </div>
+` }) %>
